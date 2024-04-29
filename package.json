@@ -1,0 +1,22 @@
+{
+  "name": "pap_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "headedTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --b chrome",
+    "recordedDasboardTest": "npm run test -- --record --key cc519384-de05-412e-91cf-bae2bf12f448 --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.7.0",
+    "pg-promise": "^11.6.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
